@@ -299,6 +299,20 @@ button:hover {
     border-color: var(--black);
 }
 
+#clear-all-btn {
+    background-color: transparent;
+    color: #c0392b;
+    border: 1.5px solid #c0392b;
+    padding: 5px 14px;
+    font-size: 12px;
+    border-radius: 999px;
+}
+
+#clear-all-btn:hover {
+    background-color: #c0392b;
+    color: var(--white);
+}
+
 #orderNo {
     font-size: 14px;
     color: var(--brown);

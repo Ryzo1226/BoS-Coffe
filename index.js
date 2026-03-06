@@ -276,6 +276,12 @@ function renderCartModal() {
 }
 
 function placeOrderHandler() {
+    if (cart.length === 0) {
+        let modalBody = document.getElementById("cart-body");
+        modalBody.innerHTML = "<p style='color:#c0392b; margin-top:16px;'>Please add items to your cart before placing an order.</p>";
+        return;
+    }
+
     let title = document.querySelector(".modal-title");
     title.textContent = "Thank you!";
 
@@ -331,6 +337,14 @@ viewCartButton.addEventListener("click", function() {
 });
 
 placeOrderButton.addEventListener("click", placeOrderHandler);
+
+document.getElementById("clear-all-btn").addEventListener("click", function() {
+    if (cart.length === 0) return;
+    cart = [];
+    cartItemCounts = {};
+    updateCardCounts();
+    renderCartModal();
+});
 
 window.onclick = function(event) {
     if (event.target === modal) {
