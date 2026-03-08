@@ -9,113 +9,109 @@ let cartItemCounts = {};
 
 let menuData = {
     espresso: [
-        { images: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=400&fit=crop", name: "Caffe Americano", price: 135 },
-        { images: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&h=400&fit=crop", name: "Caffe Latte", price: 145 },
-        { images: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop", name: "Caffe Mocha", price: 160 },
-        { images: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&h=400&fit=crop", name: "Cappuccino", price: 145 },
-        { images: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=400&fit=crop", name: "Caramel Latte", price: 170 },
-        { images: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop", name: "White Chocolate Mocha", price: 170 }
+        { images: "1.png", name: "Caffe Americano", price: 135 },
+        { images: "2.png", name: "Caffe Latte", price: 145 },
+        { images: "3.png", name: "Caffe Mocha", price: 160 },
+        { images: "4.png", name: "Cappuccino", price: 145 },
+        { images: "5.png", name: "Caramel Latte", price: 170 },
+        { images: "6.png", name: "White Chocolate Mocha", price: 170 }
     ],
     signature: [
-        { images: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&h=400&fit=crop", name: "Cold White Brew", price: 170 },
-        { images: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop", name: "Iced Creamy Latte", price: 170 },
-        { images: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop", name: "Drip Coffee", price: 120 }
+        { images: "7.png", name: "Cold White Brew", price: 170 },
+        { images: "8.png", name: "Iced Creamy Latte", price: 170 },
+
     ],
     froccino: [
-        { images: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop", name: "Froccino Caramelo", price: 165 },
-        { images: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop", name: "Froccino Mocha", price: 165 },
-        { images: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=400&h=400&fit=crop", name: "Froccino Coffee Jelly", price: 180 },
-        { images: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop", name: "Froccino Cookies N' Cream", price: 175 },
-        { images: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop", name: "Froccino White Chocolate Mocha", price: 185 }
+        { images: "11.png", name: "Froccino Caramelo", price: 165 },
+        { images: "12.png", name: "Froccino Mocha", price: 165 },
+        { images: "13.png", name: "Froccino Coffee Jelly", price: 180 },
+        { images: "14.png", name: "Froccino Cookies N' Cream", price: 175 },
+        { images: "15.png", name: "Froccino White Chocolate Mocha", price: 185 }
     ],
     freeze: [
-        { images: "https://images.unsplash.com/photo-1542990253-a781e3ec0de8?w=400&h=400&fit=crop", name: "Artisanal Chocolate Freeze", price: 160 },
-        { images: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop", name: "Cookies N' Cream Freeze", price: 165 },
-        { images: "https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=400&h=400&fit=crop", name: "Matcha Green Tea Freeze", price: 195 },
-        { images: "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=400&fit=crop", name: "Strawberry Freeze", price: 160 },
-        { images: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&h=400&fit=crop", name: "Vanilla Freeze", price: 160 }
+        { images: "16.png", name: "Artisanal Chocolate Freeze", price: 160 },
+        { images: "17.png", name: "Cookies N' Cream Freeze", price: 165 },
+        { images: "18.png", name: "Matcha Green Tea Freeze", price: 195 },
+        { images: "19.png", name: "Strawberry Freeze", price: 160 },
+        { images: "20.png", name: "Vanilla Freeze", price: 160 }
     ],
     tea: [
-        { images: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop", name: "Aged Earl Grey", price: 150 },
-        { images: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=400&fit=crop", name: "Tsaa Laya – Lemon Ginger Tea", price: 150 },
-        { images: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&h=400&fit=crop", name: "Tsaa Laya – Bughaw Tea", price: 150 },
-        { images: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=400&fit=crop", name: "Tsaa Laya – Tropical Summer Tea", price: 150 },
-        { images: "https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=400&h=400&fit=crop", name: "Matcha Green Tea Latte", price: 180 },
-        { images: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=400&fit=crop", name: "Apple Chia Black Tea", price: 185 },
-        { images: "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=400&fit=crop", name: "Strawberry Slush Black Tea", price: 185 },
-        { images: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=400&fit=crop", name: "Tropical Fruit Black Tea", price: 185 },
-        { images: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&h=400&fit=crop", name: "Citrus Ginger Tea", price: 185 }
+        { images: "25.png", name: "Matcha Green Tea Latte", price: 180 },
+        { images: "26.png", name: "Apple Chia Black Tea", price: 185 },
+        { images: "27.png", name: "Strawberry Slush Black Tea", price: 185 },
+        { images: "28.png", name: "Tropical Fruit Black Tea", price: 185 },
+        { images: "29.png", name: "Citrus Ginger Tea", price: 185 }
     ],
     chocolate: [
-        { images: "https://images.unsplash.com/photo-1542990253-a781e3ec0de8?w=400&h=400&fit=crop", name: "Hot Chocolate", price: 155 },
-        { images: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop", name: "Iced Chocolate", price: 155 }
+        { images: "30.png", name: "Hot Chocolate", price: 155 },
+        { images: "31.png", name: "Iced Chocolate", price: 155 }
     ],
     nondairy: [
-        { images: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&h=400&fit=crop", name: "Oat Latte", price: 195 },
-        { images: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=400&fit=crop", name: "Soy Latte", price: 185 },
-        { images: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=400&fit=crop", name: "Cinnamon Honey Oat Latte", price: 220 }
+        { images: "32.png", name: "Oat Latte", price: 195 },
+        { images: "33.png", name: "Soy Latte", price: 185 },
+        { images: "34.png", name: "Cinnamon Honey Oat Latte", price: 220 }
     ],
     rtd: [
-        { images: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&h=400&fit=crop", name: "Iced Brew Mocha", price: 105 },
-        { images: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop", name: "Iced Brew Macchiato", price: 105 },
-        { images: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop", name: "Iced Brew Latte", price: 105 },
-        { images: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=400&fit=crop", name: "Vita Coco – Coco Juice", price: 90 },
-        { images: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop", name: "Bundaberg – Lemon Lime & Bitters", price: 185 },
-        { images: "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=400&fit=crop", name: "Bundaberg – Pink Grapefruit", price: 185 },
-        { images: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=400&fit=crop", name: "Kombucha – Ginger Lemon", price: 185 },
-        { images: "https://images.unsplash.com/photo-1473215847952-20b5e4e55bfa?w=400&h=400&fit=crop", name: "Red Bull", price: 145 }
+        { images: "35.png", name: "Iced Brew Mocha", price: 105 },
+        { images: "36.png", name: "Iced Brew Macchiato", price: 105 },
+        { images: "37.png", name: "Iced Brew Latte", price: 105 },
+        { images: "38.png", name: "Vita Coco – Coco Juice", price: 90 },
+        { images: "39.png", name: "Bundaberg – Lemon Lime & Bitters", price: 185 },
+        { images: "40.png", name: "Bundaberg – Pink Grapefruit", price: 185 },
+        { images: "41.png", name: "Kombucha – Ginger Lemon", price: 185 },
+        { images: "42.png", name: "Red Bull", price: 145 }
     ],
     food: [
-        { images: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=400&fit=crop", name: "Bo's Breakfast Platter", price: 305 },
-        { images: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=400&fit=crop", name: "Bacon Breakfast Platter", price: 225 },
-        { images: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop", name: "Corned Beef Breakfast Platter", price: 225 },
-        { images: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&h=400&fit=crop", name: "Bacon Pesto Pasta", price: 245 },
-        { images: "https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=400&h=400&fit=crop", name: "Spanish Sardines Pasta", price: 245 },
-        { images: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&h=400&fit=crop", name: "Arrabiata Pasta", price: 205 },
-        { images: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=400&fit=crop", name: "Gourmet Tuyo Pasta", price: 275 },
-        { images: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=400&fit=crop", name: "Grilled Cheese Tuna Sandwich", price: 245 },
-        { images: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=400&fit=crop", name: "Grilled BLT Sandwich", price: 255 },
-        { images: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=400&fit=crop", name: "Spam, Egg & Cheese Muffin", price: 230 },
-        { images: "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&h=400&fit=crop", name: "Waffle Sandwich – Bacon", price: 260 }
+        { images: "43.png", name: "Bo's Breakfast Platter", price: 305 },
+        { images: "44.png", name: "Bacon Breakfast Platter", price: 225 },
+        { images: "45.png", name: "Corned Beef Breakfast Platter", price: 225 },
+        { images: "46.png", name: "Bacon Pesto Pasta", price: 245 },
+        { images: "47.png", name: "Spanish Sardines Pasta", price: 245 },
+        { images: "48.png", name: "Arrabiata Pasta", price: 205 },
+        { images: "49.png", name: "Gourmet Tuyo Pasta", price: 275 },
+        { images: "50.png", name: "Grilled Cheese Tuna Sandwich", price: 245 },
+        { images: "51.png", name: "Grilled BLT Sandwich", price: 255 },
+        { images: "52.png", name: "Spam, Egg & Cheese Muffin", price: 230 },
+        { images: "53.png", name: "Waffle Sandwich – Bacon", price: 260 }
     ],
     pastries: [
-        { images: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=400&fit=crop", name: "Butter Croissant", price: 85 },
-        { images: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=400&h=400&fit=crop", name: "Blueberry Calamansi Muffin", price: 130 },
-        { images: "https://images.unsplash.com/photo-1606101273945-e9eba5fa8b87?w=400&h=400&fit=crop", name: "Choco Banana Muffin", price: 120 },
-        { images: "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=400&fit=crop", name: "Strawberry Muffin", price: 130 },
-        { images: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=400&fit=crop", name: "Chocolate Chip Almond Biscotti", price: 70 },
-        { images: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop", name: "Craft Cookies Oatmeal Raisin", price: 70 },
-        { images: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=400&fit=crop", name: "Honey-Glazed Bacon Doughnut", price: 100 },
-        { images: "https://images.unsplash.com/photo-1511958122736-c6f70e7b6d7e?w=400&h=400&fit=crop", name: "Walnut Raisin Banana Bread", price: 105 },
-        { images: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400&h=400&fit=crop", name: "Cheddar Ensaymada", price: 110 },
-        { images: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop", name: "Cheese Roll", price: 65 },
-        { images: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=400&fit=crop", name: "Carrot Bar", price: 105 },
-        { images: "https://images.unsplash.com/photo-1490323914169-4b57c5b05c2f?w=400&h=400&fit=crop", name: "Cranberry & Pistachio Bar", price: 95 }
+        { images: "54.png", name: "Butter Croissant", price: 85 },
+        { images: "55.png", name: "Blueberry Calamansi Muffin", price: 130 },
+        { images: "56.png", name: "Choco Banana Muffin", price: 120 },
+        { images: "57.png", name: "Strawberry Muffin", price: 130 },
+        { images: "58.png", name: "Chocolate Chip Almond Biscotti", price: 70 },
+        { images: "59.png", name: "Craft Cookies Oatmeal Raisin", price: 70 },
+        { images: "60.png", name: "Honey-Glazed Bacon Doughnut", price: 100 },
+        { images: "61.png", name: "Walnut Raisin Banana Bread", price: 105 },
+        { images: "62.png", name: "Cheddar Ensaymada", price: 110 },
+        { images: "63.png", name: "Cheese Roll", price: 65 },
+        { images: "64.png", name: "Carrot Bar", price: 105 },
+        { images: "65.png", name: "Cranberry & Pistachio Bar", price: 95 }
     ],
     cakes: [
-        { images: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=400&h=400&fit=crop", name: "Blueberry Cheesecake", price: 170 },
-        { images: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop", name: "Dulce de Leche Cheesecake", price: 195 },
-        { images: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=400&fit=crop", name: "Original Burnt Cheesecake", price: 165 }
+        { images: "66.png", name: "Blueberry Cheesecake", price: 170 },
+        { images: "67.png", name: "Dulce de Leche Cheesecake", price: 195 },
+        { images: "68.png", name: "Original Burnt Cheesecake", price: 165 }
     ],
     beans: [
-        { images: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=400&fit=crop", name: "Matutum Coffee Beans", price: 395 },
-        { images: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop", name: "Mt. Apo Coffee Beans", price: 395 },
-        { images: "https://images.unsplash.com/photo-1587734195503-904fca47e0e9?w=400&h=400&fit=crop", name: "Kitanglad Coffee Beans", price: 395 },
-        { images: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=400&fit=crop", name: "Barako Coffee Beans", price: 390 },
-        { images: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop", name: "Barista Blend", price: 290 },
-        { images: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=400&fit=crop", name: "Espresso Blend", price: 360 }
+        { images: "69.png", name: "Matutum Coffee Beans", price: 395 },
+        { images: "70.png", name: "Mt. Apo Coffee Beans", price: 395 },
+        { images: "71.png", name: "Kitanglad Coffee Beans", price: 395 },
+        { images: "72.png", name: "Barako Coffee Beans", price: 390 },
+        { images: "73.png", name: "Barista Blend", price: 290 },
+        { images: "74.png", name: "Espresso Blend", price: 360 }
     ],
     merchandise: [
-        { images: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop", name: "Bo's Coffee Tote Bag", price: 350 },
-        { images: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=400&fit=crop", name: "Bo's Coffee Tumbler", price: 650 },
-        { images: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&h=400&fit=crop", name: "Bo's Coffee Mug", price: 450 },
-        { images: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400&h=400&fit=crop", name: "Vanilla Butter Cookies Jar (20 pcs)", price: 205 },
-        { images: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400&h=400&fit=crop", name: "Mango Butter Cookies Jar (20 pcs)", price: 230 },
-        { images: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400&h=400&fit=crop", name: "Almond Butter Cookies Jar (20 pcs)", price: 230 },
-        { images: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400&h=400&fit=crop", name: "Macadamia Butter Cookies Jar (50 pcs)", price: 535 },
-        { images: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop", name: "Red Velvet Crinkles Jar (15 pcs)", price: 210 },
-        { images: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&h=400&fit=crop", name: "Trail Mix", price: 90 },
-        { images: "https://images.unsplash.com/photo-1531171074112-8b0f5f93b79b?w=400&h=400&fit=crop", name: "Bar Nuts", price: 105 }
+        { images: "75.png", name: "Bo's Coffee Tote Bag", price: 350 },
+        { images: "76.png", name: "Bo's Coffee Tumbler", price: 650 },
+        { images: "77.png", name: "Bo's Coffee Mug", price: 450 },
+        { images: "78.png", name: "Vanilla Butter Cookies Jar (20 pcs)", price: 205 },
+        { images: "79.png", name: "Mango Butter Cookies Jar (20 pcs)", price: 230 },
+        { images: "80.png", name: "Almond Butter Cookies Jar (20 pcs)", price: 230 },
+        { images: "81.png", name: "Macadamia Butter Cookies Jar (50 pcs)", price: 535 },
+        { images: "82.png", name: "Red Velvet Crinkles Jar (15 pcs)", price: 210 },
+        { images: "83.png", name: "Trail Mix", price: 90 },
+        { images: "84.png", name: "Bar Nuts", price: 105 }
     ]
 };
 
