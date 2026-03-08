@@ -55,11 +55,6 @@ let menuData = {
         { images: "35.png", name: "Iced Brew Mocha", price: 105 },
         { images: "36.png", name: "Iced Brew Macchiato", price: 105 },
         { images: "37.png", name: "Iced Brew Latte", price: 105 },
-        { images: "38.png", name: "Vita Coco – Coco Juice", price: 90 },
-        { images: "39.png", name: "Bundaberg – Lemon Lime & Bitters", price: 185 },
-        { images: "40.png", name: "Bundaberg – Pink Grapefruit", price: 185 },
-        { images: "41.png", name: "Kombucha – Ginger Lemon", price: 185 },
-        { images: "42.png", name: "Red Bull", price: 145 }
     ],
     food: [
         { images: "43.png", name: "Bo's Breakfast Platter", price: 305 },
@@ -98,20 +93,12 @@ let menuData = {
         { images: "70.png", name: "Mt. Apo Coffee Beans", price: 395 },
         { images: "71.png", name: "Kitanglad Coffee Beans", price: 395 },
         { images: "72.png", name: "Barako Coffee Beans", price: 390 },
-        { images: "73.png", name: "Barista Blend", price: 290 },
         { images: "74.png", name: "Espresso Blend", price: 360 }
     ],
     merchandise: [
         { images: "75.png", name: "Bo's Coffee Tote Bag", price: 350 },
         { images: "76.png", name: "Bo's Coffee Tumbler", price: 650 },
         { images: "77.png", name: "Bo's Coffee Mug", price: 450 },
-        { images: "78.png", name: "Vanilla Butter Cookies Jar (20 pcs)", price: 205 },
-        { images: "79.png", name: "Mango Butter Cookies Jar (20 pcs)", price: 230 },
-        { images: "80.png", name: "Almond Butter Cookies Jar (20 pcs)", price: 230 },
-        { images: "81.png", name: "Macadamia Butter Cookies Jar (50 pcs)", price: 535 },
-        { images: "82.png", name: "Red Velvet Crinkles Jar (15 pcs)", price: 210 },
-        { images: "83.png", name: "Trail Mix", price: 90 },
-        { images: "84.png", name: "Bar Nuts", price: 105 }
     ]
 };
 
